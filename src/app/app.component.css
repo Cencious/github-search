@@ -1,0 +1,20 @@
+.header{
+    color: white;
+    margin: 0px;
+    background-color: #130f0f;
+    height: 80px;
+    text-align: center;
+    font-weight: 400;
+    margin: auto;
+    padding-top: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.header h1{
+    font-weight: 600;
+    font-style: oblique;
+}
+.grey-bg{
+    background-color: #7e7e7e;
+    font-weight: bolder;
+}
