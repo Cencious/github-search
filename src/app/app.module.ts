@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColorDirective } from './directive/color.directive';
 import { UppercasePipe } from './pipe/uppercase.pipe';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorDirective,
-    UppercasePipe
+    UppercasePipe,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
