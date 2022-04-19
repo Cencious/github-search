@@ -10,17 +10,17 @@ import { GithubService } from './service/github.service';
 export class AppComponent implements OnInit {
   // title = 'GitHub-Api';
 
-  profile
-  repos
-      
-      username: string="Cencious"
+  
+  repos: any
+  profile: any
+      username: string = "Cencious"
       searchText: string;
       // repos: any[]
       users: String[]
 
       constructor(private githubService:GithubService){}
       ngOnInit(): void {
-        this.githubService.getData(this.username).subscribe((data)=>{
+        this.githubService.getData(this.username).subscribe((data)=> {
          
           this.profile=data
           console.log(this.profile)
