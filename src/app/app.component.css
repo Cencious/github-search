@@ -29,10 +29,10 @@
   overflow-y: auto;
 }
 .card{
-    background-color: aliceblue;
+    background-color: rgb(39, 82, 121);
 }
 .my-container1{
-    background-color: #9400d3;
+    background-color: #ba00d3b0;
     height: 700px;
     overflow-y: auto;
     margin: 10px;
