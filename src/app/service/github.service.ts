@@ -17,7 +17,7 @@ export class GithubService {
     return this.http.get<any>(url)
   }
   getRepos(x: string){
-    const url="https://api.github.com/users/"+x +"repos?api_key="+environment.apikey;
+    const url="https://api.github.com/users/"+x +"/repos?api_key=";
     return this.http.get<any>(url)
   }
 }
