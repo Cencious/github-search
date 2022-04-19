@@ -12,7 +12,7 @@ A web app where users may enter a GitHub username into a form, submit it, and se
 - JavaScript
 - CSS
 - Bootstrap
-- jQuery
+- Angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
