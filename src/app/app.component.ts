@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from './service/github.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,27 +10,20 @@ import { GithubService } from './service/github.service';
 export class AppComponent implements OnInit {
   // title = 'GitHub-Api';
 
-  profile= {
-    login:'',
-    company: '',
-    location: '',
-    avatar_url: '',
-    public_repos: '',
-    public_gist: '',
-    followers: '',
-    following: '',
-    email: '',
-    bio: '',
-    created_at: '',
-      }
-      username:string="Cencious"
-      searchText:string;
-      repos:any[]
-      users:string[]
+  profile
+  repos
+      
+      username: string="Cencious"
+      searchText: string;
+      // repos: any[]
+      users: String[]
 
       constructor(private githubService:GithubService){}
       ngOnInit(): void {
-        this.githubService.getData(this.username).subscribe((data)=>{this.profile=data
+        this.githubService.getData(this.username).subscribe((data)=>{
+         
+          this.profile=data
+          console.log(this.profile)
         })
 
         this.githubService.getRepos(this.username).subscribe((data) => {
