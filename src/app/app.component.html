@@ -5,9 +5,9 @@
   <div class="row justify-content-center pt 2">
     <div class="col-8">
       <input class="searchInput w-100 p-2"
-      placeholder="search user" [(ngModel)]="searchText">
-    </div>
-  </div>
+      placeholder="search User"[(ngModel)]="searchText">
+    </div> 
+  </div> 
   <div class="col-2">
     <button (click)="searchUser()"
     class="btn btn-warning p-2">Search</button>
@@ -21,7 +21,7 @@
         <div class="col-12 p-4 text-center">
           <h3 appcolor>{{profile.login|uppercase}}</h3>
         </div>
-        <div class="col-12 mt-2 p-2 tect-center">
+        <div class="col-12 mt-2 p-2 text-center">
           <h4>Location: {{profile.Location}}</h4>
         </div>
         <div class="col-12 mt-2 p-2 tect-center">
@@ -37,20 +37,27 @@
           <h4>Following: {{profile.following}}</h4>
         </div>
       </div>
-    </div>
-    <div class="col-8 my-container1">
+    </div> -->
+     <div class="col-8 my-container1">
       <div class="row justify-content-center">
-        <div class="card-heder bg-transparent boarder-default">{{repo.name}}
+        <div class="card-heder bg-transparent boarder-default">{{repos.name}}
         </div>
         <div class="card-body text-default">
           <h5 class="card-title">Description</h5>
-          <p class="card-text">{repo.description}}</p>
+          <p class="card-text">{{repos.description}}</p>
+          <ol>
+            <li *ngFor="let repo of repos">
+             {{repo.name}}
+            </li>
+          </ol>
         </div>
         <div class="card-footer bg-transparent border-default">
-          <a href="{{repo.html.url}}">Learn more</a>
+          <a href="{{repos.html_url}}">Learn more</a>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
 
-</div>
+</div> 
+ 
+
