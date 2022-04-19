@@ -18,3 +18,23 @@
     background-color: #7e7e7e;
     font-weight: bolder;
 }
+.my-container{
+    font-weight: bolder;
+    color: aqua;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9400d3;
+    height: 700px;
+  overflow-y: auto;
+}
+.card{
+    background-color: aliceblue;
+}
+.my-container1{
+    background-color: #9400d3;
+    height: 700px;
+    overflow-y: auto;
+    margin: 10px;
+    padding: 10px;
+}
