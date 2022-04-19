@@ -19,11 +19,11 @@
           <img class="rounded-circle" width="250px" src="{{profile.avatar_url}}" alt="">
         </div>
         <div class="col-12 p-4 text-center">
-          <h3 appcolor>{{profile.login|uppercase}}</h3>
+          <h3 appcolor>{{profile.login}}</h3>
         </div>
-        <div class="col-12 mt-2 p-2 text-center">
+        <!-- <div class="col-12 mt-2 p-2 text-center">
           <h4>Location: {{profile.Location}}</h4>
-        </div>
+        </div> -->
         <div class="col-12 mt-2 p-2 tect-center">
           <h4>Joined on: {{profile.created_at|date}}</h4>
         </div>
@@ -37,7 +37,7 @@
           <h4>Following: {{profile.following}}</h4>
         </div>
       </div>
-    </div> -->
+    </div> 
      <div class="col-8 my-container1">
       <div class="row justify-content-center">
         <div class="card-heder bg-transparent boarder-default">{{repos.name}}
@@ -47,7 +47,7 @@
           <p class="card-text">{{repos.description}}</p>
           <ol>
             <li *ngFor="let repo of repos">
-             {{repo.name}}
+             {{repo.name}}| {{repo.description}}
             </li>
           </ol>
         </div>
